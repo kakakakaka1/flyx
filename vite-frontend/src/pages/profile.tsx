@@ -82,7 +82,7 @@ interface SecurityItem {
   key: string;
   label: string;
   description: string;
-  /** The current state, e.g. "已绑定 kure29". */
+  /** The current state, e.g. "已绑定 kakakakaka1". */
   status: string;
   /** Whether the status is a good one (bound, set up). */
   active?: boolean;

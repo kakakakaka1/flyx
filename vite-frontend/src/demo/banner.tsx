@@ -3,7 +3,7 @@ import { ChevronDown, X } from "lucide-react";
 
 import { demoRole, switchDemoRole } from "@/demo";
 
-const DOCS = "https://kure29.github.io/flyx/guide/install";
+const DOCS = "https://kakakakaka1.github.io/flyx/guide/install";
 
 /** The demo's floating note: sample data, switch views, how to install. */
 export function DemoBanner() {
