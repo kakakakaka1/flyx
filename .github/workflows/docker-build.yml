@@ -348,11 +348,11 @@ jobs:
           cp docker-compose-v4.yml ./artifacts/docker-compose-v4.yml
           cp docker-compose-v6.yml ./artifacts/docker-compose-v6.yml
 
-          # 替换镜像地址为 GHCR
-          sed -i "s|image: .*flux-panel-backend:[^[:space:]]*|image: ${{ env.REGISTRY }}/${OWNER}/flux-panel-backend:${VERSION}|g" ./artifacts/docker-compose-v4.yml
-          sed -i "s|image: .*vite-frontend:[^[:space:]]*|image: ${{ env.REGISTRY }}/${OWNER}/vite-frontend:${VERSION}|g" ./artifacts/docker-compose-v4.yml
-          sed -i "s|image: .*flux-panel-backend:[^[:space:]]*|image: ${{ env.REGISTRY }}/${OWNER}/flux-panel-backend:${VERSION}|g" ./artifacts/docker-compose-v6.yml
-          sed -i "s|image: .*vite-frontend:[^[:space:]]*|image: ${{ env.REGISTRY }}/${OWNER}/vite-frontend:${VERSION}|g" ./artifacts/docker-compose-v6.yml
+          # 替换镜像地址为自有 Harbor（ghcr 包默认私有，节点拉不了）
+          sed -i "s|image: .*flux-panel-backend:[^[:space:]]*|image: image.rar.li/library/flux-panel-backend:${VERSION}|g" ./artifacts/docker-compose-v4.yml
+          sed -i "s|image: .*vite-frontend:[^[:space:]]*|image: image.rar.li/library/vite-frontend:${VERSION}|g" ./artifacts/docker-compose-v4.yml
+          sed -i "s|image: .*flux-panel-backend:[^[:space:]]*|image: image.rar.li/library/flux-panel-backend:${VERSION}|g" ./artifacts/docker-compose-v6.yml
+          sed -i "s|image: .*vite-frontend:[^[:space:]]*|image: image.rar.li/library/vite-frontend:${VERSION}|g" ./artifacts/docker-compose-v6.yml
 
           # 复制并修改安装脚本
           cp install.sh ./artifacts/install.sh
