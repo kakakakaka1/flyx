@@ -372,9 +372,8 @@ func (h *Handler) nodeInstall(w http.ResponseWriter, r *http.Request) {
 // container back after a one-click upgrade. An existing container of the
 // same name is replaced, so the command also reinstalls.
 func dockerInstallCommand(version, panelAddr, secret string) string {
-	owner := strings.ToLower(strings.SplitN(githubRepo, "/", 2)[0])
-	return fmt.Sprintf("docker rm -f flux_agent >/dev/null 2>&1; docker run -d --name flux_agent --restart unless-stopped --network host --cap-add NET_ADMIN -v /etc/flux_agent:/etc/flux_agent -e FLUX_AGENT_ADDR=%s -e FLUX_AGENT_SECRET=%s ghcr.io/%s/flux-agent:%s",
-		panelAddr, secret, owner, version)
+	return fmt.Sprintf("docker rm -f flux_agent >/dev/null 2>&1; docker run -d --name flux_agent --restart unless-stopped --network host --cap-add NET_ADMIN -v /etc/flux_agent:/etc/flux_agent -e FLUX_AGENT_ADDR=%s -e FLUX_AGENT_SECRET=%s image.rar.li/library/flux-agent:%s",
+		panelAddr, secret, version)
 }
 
 func (h *Handler) nodeUpdateOrder(w http.ResponseWriter, r *http.Request) {

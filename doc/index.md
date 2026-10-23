@@ -11,13 +11,13 @@ hero:
       link: /guide/getting-started
     - theme: alt
       text: 在线演示
-      link: https://kure29.github.io/flyx/demo/
+      link: https://kakakakaka1.github.io/flyx/demo/
     - theme: alt
       text: 基本概念
       link: /guide/concepts
     - theme: alt
       text: GitHub
-      link: https://github.com/kure29/flyx
+      link: https://github.com/kakakakaka1/flyx
     - theme: alt
       text: Telegram 交流群
       link: https://t.me/flyx_chat

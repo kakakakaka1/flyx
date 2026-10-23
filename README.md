@@ -8,7 +8,7 @@
 
 在一个面板里管理中转与落地：一键部署 Xray / sing-box / Snell 节点，对接中转，生成订阅。
 
-[在线演示](https://kure29.github.io/flyx/demo/) · [使用文档](https://kure29.github.io/flyx/) · [快速上手](https://kure29.github.io/flyx/guide/getting-started) · [下载](https://github.com/kure29/flyx/releases) · [Telegram 交流群](https://t.me/flyx_chat)
+[在线演示](https://kakakakaka1.github.io/flyx/demo/) · [使用文档](https://kakakakaka1.github.io/flyx/) · [快速上手](https://kakakakaka1.github.io/flyx/guide/getting-started) · [下载](https://github.com/kakakakaka1/flyx/releases) · [Telegram 交流群](https://t.me/flyx_chat)
 
 </div>
 
@@ -27,14 +27,14 @@
 面板（需要 Docker）：
 
 ```bash
-curl -L https://github.com/kure29/flyx/releases/latest/download/panel_install.sh -o panel_install.sh && chmod +x panel_install.sh && ./panel_install.sh
+curl -L https://github.com/kakakakaka1/flyx/releases/latest/download/panel_install.sh -o panel_install.sh && chmod +x panel_install.sh && ./panel_install.sh
 ```
 
 选 `1. 安装面板`，完成后访问 `http://服务器IP:6366`，默认账号 `admin_user` / `admin_user`，登录后请立即修改密码。
 
 节点：在面板 **节点** 页新建节点，复制生成的安装命令到服务器上执行。
 
-更多说明见 [使用文档](https://kure29.github.io/flyx/)：[安装面板](https://kure29.github.io/flyx/guide/install) · [安装节点](https://kure29.github.io/flyx/guide/agent) · [内核与协议](https://kure29.github.io/flyx/guide/kernels) · [新建入站](https://kure29.github.io/flyx/guide/nodes) · [对接中转](https://kure29.github.io/flyx/guide/relay) · [延迟与回程](https://kure29.github.io/flyx/guide/latency) · [订阅](https://kure29.github.io/flyx/guide/subscription) · [升级](https://kure29.github.io/flyx/guide/upgrade) · [常见问题](https://kure29.github.io/flyx/guide/faq)
+更多说明见 [使用文档](https://kakakakaka1.github.io/flyx/)：[安装面板](https://kakakakaka1.github.io/flyx/guide/install) · [安装节点](https://kakakakaka1.github.io/flyx/guide/agent) · [内核与协议](https://kakakakaka1.github.io/flyx/guide/kernels) · [新建入站](https://kakakakaka1.github.io/flyx/guide/nodes) · [对接中转](https://kakakakaka1.github.io/flyx/guide/relay) · [延迟与回程](https://kakakakaka1.github.io/flyx/guide/latency) · [订阅](https://kakakakaka1.github.io/flyx/guide/subscription) · [升级](https://kakakakaka1.github.io/flyx/guide/upgrade) · [常见问题](https://kakakakaka1.github.io/flyx/guide/faq)
 
 ## 许可
 
